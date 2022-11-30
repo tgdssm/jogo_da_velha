@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_play_now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <TableLayout
+        android:id="@+id/board"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/StartButton"
+                android:textColor="@android:color/black"
+                android:tag="1"/>
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/StartButton"
+                android:textColor="@android:color/black"
+                android:tag="2"/>
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/EndButton"
+                android:textColor="@android:color/black"
+                android:tag="3"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/StartButton"
+                android:textColor="@android:color/black"
+                android:tag="4"/>
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/StartButton"
+                android:textColor="@android:color/black"
+                android:tag="5"/>
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/EndButton"
+                android:textColor="@android:color/black"
+                android:tag="6"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <Button
+                android:id="@+id/btn7"
+                style="@style/LastButton"
+                android:textColor="@android:color/black"
+                android:tag="7"/>
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/LastButton"
+                android:textColor="@android:color/black"
+                android:tag="8"/>
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:onClick="onPressedBtn"
+                android:textSize="50dp"
+                android:tag="9"/>
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:text="@string/reset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/board" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

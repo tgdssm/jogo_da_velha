@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="StartButton">
+        <item name="android:onClick">onPressedBtn</item>
+        <item name="android:background">@drawable/border_start_button</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+
+    <style name="EndButton">
+        <item name="android:onClick">onPressedBtn</item>
+        <item name="android:background">@drawable/border_end_button</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+
+    <style name="LastButton">
+        <item name="android:onClick">onPressedBtn</item>
+        <item name="android:background">@drawable/border_last_button</item>
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:textSize">50dp</item>
+    </style>
+</resources>
